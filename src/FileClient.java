@@ -5,7 +5,7 @@ public class FileClient {
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket("localhost", 12345); // Indirizzo IP del server e porta
 
-        File file = new File("prova.conf");
+        File file = new File("hyprland.conf");
         byte[] buffer = new byte[(int) file.length()];
         FileInputStream fis = new FileInputStream(file);
         BufferedInputStream bis = new BufferedInputStream(fis);

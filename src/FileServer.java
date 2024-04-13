@@ -9,7 +9,7 @@ public class FileServer {
         InputStream in = clientSocket.getInputStream();
 
         // Riceve il file
-        FileOutputStream fos = new FileOutputStream("hyprland.conf");
+        FileOutputStream fos = new FileOutputStream("prova.conf");
         byte[] buffer = new byte[1024];
         int bytesRead;
         while ((bytesRead = in.read(buffer)) != -1) {
